@@ -1,9 +1,14 @@
+import { T_logic } from '../cjs/temp_logic.js';
+
 let weather = {
   "apiKey" : "1fda49137cf8610c15adebeca912d465",
   fetchWeather : function (city) {
     fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&usits=metric&appid=" + this.apiKey)
     .then((response) => response.json())
-    .then((data) => this.displayWeather(data));
+    .then((data) => {
+      this.displayWeather(data);
+      T_logic(data);
+    });
   }, //api에서 정보를 가져온 후 사용 할 수 있게 data로 넘김
   displayWeather : function (data) {
     const name = data.city.name;

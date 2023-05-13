@@ -61,3 +61,7 @@ input {
   font-size: 30px;
   height: 100%;
 }
+
+.colu{
+    flex-direction: column;
+}

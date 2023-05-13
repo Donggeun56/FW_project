@@ -107,8 +107,29 @@ function Cloths_M(temp) {
       ]
     }
   ]
+  const F = [
+    {
+      top: [
+        {
+          name: "Dress_1"
+        },
+        {
+          name: "Dress_6"
+        }
+      ]
+    },
+    {
+      bottom: [
+        {
+          name: "Dress_2"
+        },
+        {
+          name: "Dress_2"
+        }
+      ]
+    }
+  ];
 
-.i
   const t = eval(temp)[0].top[Math.floor(Math.random() * eval(temp)[0].top.length)];
   const b = eval(temp)[1].bottom[Math.floor(Math.random() * eval(temp)[1].bottom.length)];
 
