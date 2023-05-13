@@ -1,6 +1,5 @@
 let weadet = [];
 function T_logic(){
-    console.log(weadet);
     const D_desc = ['rain','snow']
     let getTClass=[];
 
@@ -31,7 +30,6 @@ function T_logic(){
             getTClass.push((i === D_desc.length) ? "E" : "F");//맑음:악천후
         }
     }
-    console.log(getTClass);
     day_temp = getTClass;
 }
 //[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03d"}]
