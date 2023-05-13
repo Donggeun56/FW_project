@@ -12,7 +12,6 @@ function Cloth_change() {
             document.getElementById(`chara-pan${[ic]}`).src = `Img/${clothes[1]}.png`;
         }
     }
-    else {return;}
 }
 
 function GenderToggle() {
