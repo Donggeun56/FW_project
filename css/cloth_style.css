@@ -25,7 +25,8 @@
 
 .hor_d{
     display: flex;
-    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .hor_d .hor{
     margin-right: auto;

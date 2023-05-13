@@ -3,7 +3,7 @@
   font-size: 30px;
 }
 
-  #bparent{
+#bparent{
     width: 90%;
     margin: 10px auto;
     display: flex;
@@ -64,4 +64,10 @@ input {
 
 .colu{
     flex-direction: column;
+}
+.card {
+    clear: both;
+    display: inline-block;
+    width: 90%;
+    margin-bottom: 20px;
 }

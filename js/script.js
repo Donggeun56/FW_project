@@ -1,5 +1,3 @@
-import { T_logic } from '../cjs/temp_logic.js';
-
 let weather = {
   "apiKey" : "1fda49137cf8610c15adebeca912d465",
   fetchWeather : function (city) {
@@ -7,7 +5,8 @@ let weather = {
     .then((response) => response.json())
     .then((data) => {
       this.displayWeather(data);
-      T_logic(data);
+      weadet = [data.list[0].weather[0].description, data.list[0].main.temp-273.15];
+      Cloth_change();
     });
   }, //api에서 정보를 가져온 후 사용 할 수 있게 data로 넘김
   displayWeather : function (data) {
