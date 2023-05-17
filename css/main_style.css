@@ -8,12 +8,6 @@ body {
     background-size: cover;
     background: linear-gradient(lightCyan 40%, skyBlue, deepSkyBlue);
 }
-#bparent{
-    width: 90%;
-    margin: 10px auto;
-    display: flex;
-    
-}
 
 .wcity {
     border: 1px solid rgb(73, 62, 122);
@@ -21,6 +15,7 @@ body {
     width:10%;
     box-sizing: border-box;
     border-radius: 20px;
+    float: left;
 }
 
 .cam{
