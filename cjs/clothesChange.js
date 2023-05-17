@@ -1,5 +1,6 @@
 let day_temp = [];//옷 종류 구분함수 [아침, 점심, 저녁]
 let set_reg = 'M';
+let bw = [];
 
 function Cloth_change() {
     if(weadet.length!==0){
@@ -10,6 +11,7 @@ function Cloth_change() {
             document.getElementById(`chara-img${[ic]}`).src = (set_reg === 'M') ? 'Img/Human_M.png' : 'Img/Human_W.png';
             document.getElementById(`chara-clo${[ic]}`).src = `Img/${clothes[0]}.png`;
             document.getElementById(`chara-pan${[ic]}`).src = `Img/${clothes[1]}.png`;
+            document.getElementById(`chara-umb${[ic]}`).src = bw[ic] ? 'Img/umbrella.png' : 'Img/Clean.png';
         }
     }
 }
@@ -25,12 +27,6 @@ function GenderToggle() {
     set_toggle.addEventListener('change', GenderToggle);
 })();
 
-function dustMask(mask){
-    let masks = document.getElementsByClassName('chara-mask');
-    for (let i = 0; i < masks.length; i++) {
-        masks[i].src = mask ? 'Img/Mask.png' : 'Img/Clean.png';
-    }
-}//마스크 착용여부 true or false
 
 
 /*

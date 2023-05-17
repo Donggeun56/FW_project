@@ -12,6 +12,7 @@ function T_logic(){
                 }
             }
             getTClass.push((i === D_desc.length) ? "A" : "B");//맑음:악천후
+            bw.push(!(i === D_desc.length));
         }
         else if (weadet[1] < 24) {
             for (; i < D_desc.length; i++) {
@@ -20,6 +21,7 @@ function T_logic(){
                 }
             }
             getTClass.push((i === D_desc.length) ? "C" : "D");//맑음:악천후
+            bw.push(!(i === D_desc.length));
         }
         else {
             for (; i < D_desc.length; i++) {
@@ -28,6 +30,7 @@ function T_logic(){
                 }
             }
             getTClass.push((i === D_desc.length) ? "E" : "F");//맑음:악천후
+            bw.push(!(i === D_desc.length));
         }
     }
     day_temp = getTClass;
