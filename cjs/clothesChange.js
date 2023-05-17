@@ -27,11 +27,14 @@ function GenderToggle() {
     set_toggle.addEventListener('change', GenderToggle);
 })();
 
-
+window.onload = function(){
+    weather.searchseoul();
+};
 
 /*
 기온별로 A,B,C,D,E단계
 성별 선택 랜덤추천
 상의(원피스여부) 하의
-모자 마스크
+모자 마스크 우산
+
 */

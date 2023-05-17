@@ -15,38 +15,12 @@ body {
     
 }
 
-#seoul {
+.wcity {
     border: 1px solid rgb(73, 62, 122);
     flex:1;
     width:10%;
     box-sizing: border-box;
     border-radius: 20px;
-}
-#Gyeonggi{
-  border: 1px solid rgb(73, 62, 122);
-  flex:1;
-  width:10%;
-  box-sizing: border-box;
-  border-radius: 20px;
-}
-
-
-
-#incheon{
-    border: 1px solid rgb(50, 57, 160);
-    flex:1;
-    width:10%;
-    box-sizing: border-box;
-    border-radius: 20px;
-}
-
-#busan{
-  border: 1px solid rgb(45, 53, 160);
-  flex:1;
-  width:10%;
-  box-sizing: border-box;
-  border-radius: 20px;
- 
 }
 
 .cam{
@@ -72,7 +46,7 @@ input {
     clear: both;
     display: inline-block;
     border-style: hidden;
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
     flex-direction: column;
     background: linear-gradient(lightCyan, skyBlue, deepSkyBlue);

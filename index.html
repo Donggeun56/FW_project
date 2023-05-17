@@ -25,10 +25,10 @@
     style="text-align: center; font-size: 50px; font-family: 'Dongle' !important; color: rgb(58, 101, 182);">패션을 통하여 날씨를
     알아보자</h2>
 <div class="bparent">
-    <button type="button" id="seoul">서울</button>
-    <button type="button" id="Gyeonggi">경기도</button>
-    <button type="button" id="incheon">인천</button>
-    <button type="button" id="busan">부산</button>
+    <button type="button" class="wcity">서울</button>
+    <button type="button" class="wcity">경기도</button>
+    <button type="button" class="wcity">인천</button>
+    <button type="button" class="wcity">부산</button>
 </div>
 
 <div class="card">
@@ -48,7 +48,7 @@
             </svg>
         </button>
     </div>
-    <h1 class="trash"></h1>
+    <h1 style="margin: auto; text-align: center; font-size: 40px;">내일의 날씨</h1>
     <div class="weather loading">
         <div style="float: left; width: 33%; text-align: center; font-size: large;">
 
@@ -57,17 +57,17 @@
             <div class="description"> </div>
             <div class="humidity"></div>
             <div class="wind"></div>
-            <div class="dt_txt"></div>
+            <div>아침</div>
         </div>
 
         <div style="float: left; width: 33%; text-align: center; font-size: large;">
 
             <h1 class="temp1" style="font-size: 50px;"></h1>
             <img class="icon1">
-            <div class="description1">지역을 선택해주세요</div>
+            <div class="description1">로딩중</div>
             <div class="humidity1"></div>
             <div class="wind1"></div>
-            <div class="dt_txt1"></div>
+            <div>점심</div>
         </div>
 
         <div style="float: left; width: 33%; text-align: center; font-size: large;">
@@ -77,7 +77,7 @@
             <div class="description2"> </div>
             <div class="humidity2"></div>
             <div class="wind2"></div>
-            <div class="dt_txt2"></div>
+            <div>저녁</div>
         </div>
     </div>
 </div>
